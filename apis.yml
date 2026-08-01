@@ -1,8 +1,30 @@
 aid: sava
-name: sava
-description: sava is a company surfaced as a portfolio company of balderton-capital and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: SAVA
+description: >-
+  SAVA (sava.health) is a health-monitoring company developing a minimally
+  invasive, continuous multi-molecule biosensor worn just beneath the skin. The
+  platform is designed to capture real-time molecular data - glucose, lactate,
+  ketones, sodium, histamine, urea, alcohol, and cortisol - and surface it
+  through a connected mobile app, aiming to shift healthcare toward preventative
+  monitoring and personal wellness. The company is early stage and pre-launch,
+  operating a waiting-list model for early access to its device rather than a
+  public product. It publishes no first-party developer API or health-data API;
+  its marketing site is built on Wix and exposes the Wix Site MCP endpoint and a
+  published llms.txt for agentic access to public site content only. Backed by
+  Balderton Capital.
 url: https://raw.githubusercontent.com/api-evangelist/sava/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://static.wixstatic.com/media/aaa55f_2da7a13e2e4f419c87e476acfc59b6a7~mv2.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,9 +33,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Health
+- Digital Health
+- Biosensor
+- Wearables
+- Continuous Monitoring
+- Preventative Health
+- HealthTech
+- MCP
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +53,23 @@ maintainers:
 common:
 - type: Website
   url: https://www.sava.health/
+- type: Blog
+  url: https://www.sava.health/blog
+- type: SignUp
+  url: https://www.sava.health/waiting-list
+- type: TermsOfService
+  url: https://www.sava.health/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.sava.health/privacy-notice
+- type: MCPServer
+  name: SAVA Site MCP (Wix)
+  url: mcp/sava-mcp.yml
+- type: LLMsTxt
+  url: llms/sava-llms.txt
+- type: DomainSecurity
+  url: security/sava-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1
